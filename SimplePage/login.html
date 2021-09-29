@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        #login {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(144, 206, 247);
+        }
+        
+        #login .loginBox {
+            box-sizing: border-box;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 500px;
+            height: 800px;
+            background-color: #fff;
+            border-radius: 18px;
+            transform: translate(-50%, -50%);
+        }
+        
+        #login .loginBox:hover {
+            border-radius: 36px;
+            margin-top: -10px;
+            margin-left: -10px;
+            box-shadow: 10px 10px 5px rgb(126, 126, 126);
+            transition: all 0.5s;
+        }
+        
+        #login .loginBox .register {
+            box-sizing: border-box;
+            padding-top: 104px;
+            text-align: center;
+            width: 100%;
+            height: 140px;
+        }
+        
+        #login .loginBox .register span {
+            color: #000;
+            font-family: "楷体";
+            font-size: 36px;
+            font-weight: 700;
+        }
+        
+        #login .loginBox .news {
+            box-sizing: border-box;
+            padding: 120px 60px;
+            width: 100%;
+            height: 460px;
+            text-align: center;
+        }
+        
+        #login .loginBox .news label {
+            display: block;
+            margin: 5px 0;
+            width: 100%;
+            height: 30px;
+            font-family: "楷体";
+            font-size: 24px;
+            text-align: left;
+            transition: all 0.5s;
+        }
+        
+        #login .loginBox .news label:hover {
+            text-shadow: 3px 3px 2px #000;
+        }
+        
+        #login .loginBox .news input {
+            margin: 5px 0;
+            margin-left: 80px;
+            width: 300px;
+            height: 30px;
+            font-size: 16px;
+            border: 0;
+            outline: none;
+            border: 1px solid rgb(126, 126, 126);
+            border-radius: 5px;
+            transition: all 0.5s;
+        }
+        
+        #login .loginBox .news .button {
+            margin: 0;
+            margin-top: 18px;
+            width: 220px;
+            height: 32px;
+            cursor: pointer;
+            font-family: "楷体";
+            background-color: antiquewhite;
+        }
+        
+        #login .loginBox .news .button:hover {
+            width: 382px;
+        }
+        
+        #login .loginBox .other {
+            box-sizing: border-box;
+            padding: 60px;
+            width: 100%;
+            height: 200px;
+            border-radius: 18px;
+        }
+        
+        #login .loginBox .other span {
+            float: right;
+            padding: 5px;
+            width: 64px;
+        }
+        
+        #login .loginBox .other .forget {
+            padding-right: 0;
+        }
+        
+        #login .loginBox .other span:nth-child(2) {
+            width: 2px;
+            color: rgb(126, 126, 126);
+        }
+        
+        #login .loginBox .other span a {
+            color: rgb(126, 126, 126);
+        }
+        
+        #login .loginBox .other span a:hover {
+            color: #000;
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login">
+        <div class="loginBox">
+            <div class="register">
+                <span>登录</span>
+            </div>
+            <form action="" class="news">
+                <label for="name">用户名:</label>
+                <input type="username" value="" id="name">
+                <label for="pass">密码:</label>
+                <input type="password" value="" id="pass">
+                <input type="submit" class="button" id="sub">
+            </form>
+
+            <div class="other">
+                <span class="forget"><a href="#">用户注册</a></span>
+                <span>|</span>
+                <span><a href="#">忘记密码</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
